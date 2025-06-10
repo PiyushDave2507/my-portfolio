@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { TbMenu2 } from 'react-icons/tb';
-import { IoClose } from 'react-icons/io5';
 import './style.css';
 
 const Index = () => {
@@ -40,10 +38,6 @@ const Index = () => {
           <NavLink to="/contact" className="nav_link" onClick={closeMenu}>Contact</NavLink>
         </li>
       </ul>
-
-      <div className="nav_toggle" onClick={closeMenu}>
-        {isOpen ? <IoClose size={24} /> : <TbMenu2 size={24} />}
-      </div>
     </nav>
   );
 };
