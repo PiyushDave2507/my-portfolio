@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './style.css';
-
+import { TbMenu2 } from "react-icons/tb";
+import { IoClose } from "react-icons/io5";
+import { navLinks } from '../../utils/components';
 const Index = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   const closeMenu = () => {
     setIsOpen(false);
