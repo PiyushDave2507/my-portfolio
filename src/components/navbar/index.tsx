@@ -20,23 +20,23 @@ const Index = () => {
         </Link>
       </div>
 
-      <ul className={`nav_list ${isOpen ? 'show-menu' : 'nav_list'}`}>
-                   
-                   {
-                        navLinks.map((index) => (
-                            <li className="nav_item">
-                                <NavLink to={index.path} className='nav_link' onClick={closeMenu}>
-                                    {index.name}
-                                </NavLink>
-                            </li>
-                        ))
-                   }
-                   
-                </ul>
-                <div className="nav_toggle" onClick={closeMenu}>
-                    {isOpen ? <IoClose /> : <TbMenu2 /> }
-                    
-                </div>
+      {/* <ul className={`nav_list ${isOpen ? 'show-menu' : 'nav_list'}`}>
+        <li className="nav_item">
+          <NavLink to="/" className="nav_link" onClick={toggleMenu}>Home</NavLink>
+        </li>
+        <li className="nav_item">
+          <NavLink to="/about" className="nav_link" onClick={toggleMenu}>About</NavLink>
+        </li>
+        <li className="nav_item">
+          <NavLink to="/services" className="nav_link" onClick={closeMenu}>Services</NavLink>
+        </li>
+        <li className="nav_item">
+          <NavLink to="/project" className="nav_link" onClick={closeMenu}>Project</NavLink>
+        </li>
+        <li className="nav_item">
+          <NavLink to="/contact" className="nav_link" onClick={closeMenu}>Contact</NavLink>
+        </li>
+      </ul> */}
     </nav>
   );
 };
