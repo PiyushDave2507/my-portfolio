@@ -21,7 +21,7 @@ const Index = () => {
         </Link>
       </div>
 
-      <ul className={`nav_list ${isOpen ? 'show-menu' : 'nav_list'}`}>
+      {/* <ul className={`nav_list ${isOpen ? 'show-menu' : 'nav_list'}`}>
         <li className="nav_item">
           <NavLink to="/" className="nav_link" onClick={toggleMenu}>Home</NavLink>
         </li>
@@ -37,7 +37,7 @@ const Index = () => {
         <li className="nav_item">
           <NavLink to="/contact" className="nav_link" onClick={closeMenu}>Contact</NavLink>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 };
