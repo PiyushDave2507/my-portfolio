@@ -1,5 +1,5 @@
 import './style.css';
-import HomeLogo from '../../assets/images/homelogo.jpg';
+// import HomeLogo from '../../assets/images/homelogo.jpg';
 
 function Home() {
   return (
@@ -17,9 +17,9 @@ function Home() {
           <button className="btn-secondary">View Projects</button>
         </div>
       </div>
-      <div className="right">
+      {/* <div className="right">
         <img src={HomeLogo} alt="Home Logo" className="img" />
-      </div>
+      </div> */}
     </div>
   );
 }
