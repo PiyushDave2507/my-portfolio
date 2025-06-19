@@ -1,10 +1,11 @@
 import './style.css';
-import ServicesSection from '../../components/ServicesSection';
+import { services, stats } from '../../utils/data';
+import ServiceCard from '../../components/ServicesSection';
+import StatItem from '../../components/StatItem';
 
 function Home() {
   return (
     <>
-     
       <div className="section">
         <div className="left">
           <h2 className="tagline">Full Stack Developer</h2>
@@ -24,10 +25,46 @@ function Home() {
         </div>
       </div>
 
-      
-  <ServicesSection />
+      <div className="services-section">
+        <div className="services-left">
+          <h5 className="subtitle">Best Services</h5>
+          <h1 className="section-title">What Can I Do For You</h1>
+          <p className="section-desc">
+            I craft modern, responsive websites and powerful web applications to help you grow your business online...
+          </p>
 
-</>
+          <div className="inline-stats">
+            {stats.map((stat, index) => (
+               <StatItem
+                 key={index}
+                 count={stat.count}
+                 label={stat.label}
+                />
+             ))}
+            </div>
+
+          <div className="experience">
+            <div className="years">
+              <h6>15+</h6>
+              <p>Years Of Experiences</p>
+            </div>
+            <button className="certified-btn">Certified UX Professional</button>
+          </div>
+        </div>
+
+        <div className="services-right">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              image={service.image}
+              title={service.title}
+              projects={service.projects}
+            />
+          ))}
+        </div>
+      </div>
+
+    </>
   );
 }
 
