@@ -1,12 +1,10 @@
 import React from 'react';
 import '../../pages/Home/style.css';
-
 export interface ServiceCardProps {
   image: string;
   title: string;
   projects: string;
 }
-
 const ServiceCard = ({ image, title, projects }: ServiceCardProps) => {
   return (
     <div className="service-card">
@@ -19,5 +17,4 @@ const ServiceCard = ({ image, title, projects }: ServiceCardProps) => {
     </div>
   );
 };
-
 export default ServiceCard;

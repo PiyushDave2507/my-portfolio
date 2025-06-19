@@ -1,6 +1,5 @@
 import { ServiceCardProps } from '../components/ServicesSection';
 import { StatItemProps } from '../components/StatItem';
-
 export const services: ServiceCardProps[] = [
  {
     title: "UI/UX Design",
@@ -18,7 +17,6 @@ export const services: ServiceCardProps[] = [
     projects: "115 Projects Done",
   },
 ];
-
 export const stats: StatItemProps[] = [
   {count: '3,460+', label: 'Satisfied Clients'},
   {count: '1,458+',label: 'Project Completed'}

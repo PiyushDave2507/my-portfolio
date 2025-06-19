@@ -2,10 +2,9 @@ import './style.css';
 import { services, stats } from '../../utils/data';
 import ServiceCard from '../../components/ServicesSection';
 import StatItem from '../../components/StatItem';
-
 function Home() {
   return (
-    <>
+    <div>
       <div className="section">
         <div className="left">
           <h2 className="tagline">Full Stack Developer</h2>
@@ -24,7 +23,6 @@ function Home() {
           <img src="/images/2.jpg" alt="Home Logo" className="img" />
         </div>
       </div>
-
       <div className="services-section">
         <div className="services-left">
           <h5 className="subtitle">Best Services</h5>
@@ -32,7 +30,6 @@ function Home() {
           <p className="section-desc">
             I craft modern, responsive websites and powerful web applications to help you grow your business online...
           </p>
-
           <div className="inline-stats">
             {stats.map((stat, index) => (
                <StatItem
@@ -42,7 +39,6 @@ function Home() {
                 />
              ))}
             </div>
-
           <div className="experience">
             <div className="years">
               <h6>15+</h6>
@@ -51,7 +47,6 @@ function Home() {
             <button className="certified-btn">Certified UX Professional</button>
           </div>
         </div>
-
         <div className="services-right">
           {services.map((service, index) => (
             <ServiceCard
@@ -63,9 +58,7 @@ function Home() {
           ))}
         </div>
       </div>
-
-    </>
+    </div>
   );
 }
-
 export default Home;

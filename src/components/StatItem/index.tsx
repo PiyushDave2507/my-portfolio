@@ -1,11 +1,9 @@
 import React from 'react';
 import '../../pages/Home/style.css';
-
 export interface StatItemProps {
   count: string;
   label: string;
 }
-
 const StatItem=({ count, label }  :StatItemProps) => {
   return (
     <div className="stat-item">
@@ -14,5 +12,4 @@ const StatItem=({ count, label }  :StatItemProps) => {
     </div>
   );
 };
-
 export default StatItem;
