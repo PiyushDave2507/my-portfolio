@@ -1,5 +1,6 @@
 import { ServiceCardProps } from '../components/ServicesSection';
 import { StatItemProps } from '../components/StatItem';
+
 export const services: ServiceCardProps[] = [
  {
     title: "UI/UX Design",

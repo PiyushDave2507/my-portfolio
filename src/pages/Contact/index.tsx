@@ -1,24 +1,49 @@
-import ContactCard from '../../components/Contact';
+import ContactItem from '../../components/Contact';
+import { contactDetails, formFields } from '../../utils/contacts';
 import './style.css';
 
 function Contact() {
   return (
-    <section className="contact section">
+    <div className="contact section">
       <div className="contact_container container">
         <div className="contact_form">
           <h1>Get in Touch</h1>
           <form>
-            <input type="text" placeholder="Name" required />
-            <input type="text" placeholder="Mobile Number" required />
-            <input type="text" placeholder="Email" required />
-            <textarea placeholder="Message" rows={5} required></textarea>
+            {formFields.map((field, index) =>
+              field.type === 'textarea' ? (
+                <textarea
+                  key={index}
+                  placeholder={field.placeholder}
+                  rows={field.rows}
+                  required={field.required}
+                />
+              ) : (
+                <input
+                  key={index}
+                  type={field.type}
+                  placeholder={field.placeholder}
+                  required={field.required}
+                />
+              )
+            )}
             <button type="submit">Send Message</button>
           </form>
         </div>
-        <ContactCard />
+        <div className="contact_card">
+          <h2>Contact Info</h2>
+          <ul>
+            {contactDetails.map((detail, index) => (
+              <ContactItem
+                key={index}
+                label={detail.label}
+                value={detail.value}
+                icon={detail.icon}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
-
 export default Contact;

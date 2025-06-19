@@ -2,6 +2,7 @@ import './style.css';
 import { services, stats } from '../../utils/data';
 import ServiceCard from '../../components/ServicesSection';
 import StatItem from '../../components/StatItem';
+
 function Home() {
   return (
     <div>
