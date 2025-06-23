@@ -1,4 +1,3 @@
 export {default as Home } from './Home/index'
 export {default as Contact } from './Contact/index'
 export {default as Project } from './Project/index'
-export {default as Services } from './Services/index'
