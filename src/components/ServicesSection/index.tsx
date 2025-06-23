@@ -1,5 +1,6 @@
-import React from 'react';
+
 import '../../pages/Home/style.css';
+
 export interface ServiceCardProps {
   image: string;
   title: string;
