@@ -7,7 +7,6 @@ export const navLinks = [
         name: 'Services',
         path: '/services'
     },
-
     {
         name: 'Project',
         path: '/project'

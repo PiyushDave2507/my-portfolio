@@ -12,7 +12,10 @@ function App() {
       <Index />
       <Routes>
         <Route path='/' element={<Home />} />
+<<<<<<< HEAD
         
+=======
+>>>>>>> c77b27862229af3368779406f8288793a66bd124
         <Route path='/services' element={<Services />} />
         <Route path='/project' element={<Project />} />
         <Route path='/contact' element={<Contact />} />
