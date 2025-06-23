@@ -1,11 +1,22 @@
-import './style.css'
+
+import { projects } from '../../utils/projects';
+import ProjectCard from '../../components/Project/index';
+
+import './style.css';
 
 function Project() {
   return (
-    <div className='section'>
-      <h1 className='text-3xl'>Project Page</h1>
-    </div>
-  )
+    <section className="project section">
+      <div className="project_container container">
+        <h2 className="projects">Projects</h2>
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <ProjectCard project={project} key={index} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default Project
+export default Project;
