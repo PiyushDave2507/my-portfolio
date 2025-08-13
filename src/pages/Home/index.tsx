@@ -44,7 +44,7 @@ function Home() {
               <h6>15+</h6>
               <p>Years Of Experiences</p>
             </div>
-            <button className="certified-btn">Certified UX Professional</button>
+            <button className="certified-btn">Certified UX Piyush</button>
           </div>
         </div>
         <div className="services-right">
